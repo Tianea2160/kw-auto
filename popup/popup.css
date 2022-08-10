@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oleo+Script+Swash+Caps&display=swap');
+body{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    height: fit-content;
+    width: fit-content;
+}
+
+.loginInfoWrapper{
+    border: 2px solid gray;
+    border-radius: 7px;
+    box-shadow: 0 0 1rem 3px rgba(0 0 0 / 15%);
+
+    padding: 10px;
+}
+.imageInputWrapper{
+    display: flex;
+}
+.inputWrapper{
+    margin-left: 10px;
+}
+
+.inputWrapper input{
+    padding-left: 5px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 7px;
+
+    font-family: 'Lato', sans-serif;
+}
+
+
+button{
+    height: 30px;
+    width: 50px;
+
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+
+    border : none;
+    border-radius: 7px;
+    box-shadow: 0 0 1rem 3px rgba(0 0 0 / 15%);
+
+    background-color: #f03d3d;
+    color: #fff;
+}
+
+.icon{
+    height: 150px;
+    width: 150px;
+}
+
+.footer{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.toggleSwitch {
+    width: 50px;
+    height: 30px;
+    display: block;
+    position: relative;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem 3px rgba(0 0 0 / 15%);
+    cursor: pointer;
+}
+
+.toggleSwitch .toggleButton {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: .2rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #f03d3d;
+}
+
+/* 체크박스가 체크되면 변경 이벤트 */
+#toggle:checked ~ .toggleSwitch {
+    background: #f03d3d;
+}
+
+#toggle:checked ~ .toggleSwitch .toggleButton {
+    left: calc(100% - 24px);
+    background: #fff;
+}
+
+.toggleSwitch, .toggleButton {
+    transition: all 0.2s ease-in;
+}
+

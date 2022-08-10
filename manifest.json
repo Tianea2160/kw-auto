@@ -1,0 +1,46 @@
+{
+  "name": "KW Auto",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "./popup/popup.html",
+    "default_icon": {
+      "8" : "/asset/icon/KWAuto.png",
+      "16": "/asset/icon/icon_default_1.png",
+      "32": "/asset/icon/icon_default_2.png",
+      "48": "/asset/icon/icon_default_3.png",
+      "128": "/asset/icon/icon_default_4.png"
+    }
+  },
+  "icons": {
+    "8" : "/asset/icon/KWAuto.png",
+    "16": "/asset/icon/icon_default_1.png",
+    "32": "/asset/icon/icon_default_2.png",
+    "48": "/asset/icon/icon_default_3.png",
+    "128": "/asset/icon/icon_default_4.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.kw.ac.kr/*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://klas.kw.ac.kr/usr/cmn/login/LoginForm.do*"
+      ],
+      "js": [
+        "login.js"
+      ]
+    }
+  ]
+}
