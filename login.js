@@ -1,4 +1,12 @@
 // login page 구현
+function encryption(content) {
+    return window.btoa(content);
+}
+
+function decryption(encodedContent) {
+    return window.atob(encodedContent);
+}
+
 const loginId = document.getElementById("loginId");
 const loginPwd = document.getElementById("loginPwd");
 const loginBtn = document.querySelector('.btn');
@@ -13,8 +21,8 @@ const login = () => {
             alert("KW Auto: id or password is not saved!\nPlease fill out the information.");
             return;
         }
-        loginId.value = res[0]?.loginId;
-        loginPwd.value = res[1]?.loginPwd;
+        loginId.value = decryption(res[0]?.loginId);
+        loginPwd.value = decryption(res[1]?.loginPwd);
         loginBtn.click();
     }).catch(e => {
         console.log(e);
@@ -23,7 +31,6 @@ const login = () => {
 
 chrome.storage.sync.get("OnOffState")
     .then(res => {
-        console.log(res.OnOffState);
         if (res.OnOffState === "ON") {
             login();
         }

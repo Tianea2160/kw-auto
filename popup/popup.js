@@ -3,6 +3,16 @@ const loginId = document.getElementById("loginId");
 const loginPwd = document.getElementById("loginPwd");
 const toggle = document.querySelector("input[name=checkbox]");
 const icon = document.querySelector(".icon");
+const shToggle = document.getElementById("shToggle");
+const shButton = document.getElementById("shButton");
+
+function encryption(content) {
+    return window.btoa(content);
+}
+
+function decryption(encodedContent) {
+    return window.atob(encodedContent);
+}
 
 chrome.storage.sync.get("OnOffState")
     .then(res => {
@@ -25,14 +35,24 @@ toggle.addEventListener("change", () => {
     }
 })
 
+shButton.addEventListener("click", (e) => {
+    if (shButton.innerText === "SHOW") {
+        shButton.innerText = "HIDE";
+        loginPwd.type = "active";
+    } else if (shButton.innerText === "HIDE") {
+        shButton.innerText = "SHOW";
+        loginPwd.type = "password";
+    }
+})
+
 // 저장된 아이디 비밀번호 불러오기
 chrome.storage.sync.get("loginId")
-    .then(res => loginId.value = res.loginId);
+    .then(res => loginId.value = decryption(res.loginId));
 chrome.storage.sync.get("loginPwd")
-    .then(res => loginPwd.value = res.loginPwd);
+    .then(res => loginPwd.value = decryption(res.loginPwd));
 
 // local storage에 저장해야함
 saveBtn.addEventListener("click", (e) => {
-    chrome.storage.sync.set({loginId: loginId.value});
-    chrome.storage.sync.set({loginPwd: loginPwd.value});
+    chrome.storage.sync.set({loginId: encryption(loginId.value)});
+    chrome.storage.sync.set({loginPwd: encryption(loginPwd.value)});
 })

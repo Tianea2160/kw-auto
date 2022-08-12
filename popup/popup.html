@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <title>KW Auto</title>
     <link rel="stylesheet" href="popup.css"/>
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-<h2>KW Auto</h2>
+<h1>KW Auto</h1>
 <div class="loginInfoWrapper">
     <div class="imageInputWrapper">
         <img class="icon" src="../asset/icon/KWAuto.png" alt="KW_AUTO_IMAGE"/>
         <div class="inputWrapper">
-            <label for="loginId">
-                <p>ID</p>
-                <input id="loginId" placeholder="id"/><br/>
-            </label>
-            <label for="loginPwd">
-                <p>Pwd</p>
-                <input id="loginPwd" placeholder="pw"/>
-            </label>
+            <div class="id">
+                <h2>ID</h2>
+                <label for="loginId">
+                    <input id="loginId" placeholder="id"/>
+                </label>
+            </div>
+            <div class="pw">
+                <h2>Pwd</h2>
+                <label for="loginPwd">
+                    <input type="password" id="loginPwd" placeholder="pw"/>
+                    <input type="checkbox" id="shToggle" hidden/>
+                    <button type="button" id="shButton">SHOW</button>
+                </label>
+            </div>
         </div>
     </div>
     <hr/>
@@ -27,9 +34,10 @@
         <label for="toggle" class="toggleSwitch">
             <span class="toggleButton"></span>
         </label>
-        <button id="saveBtn" type="button">save</button>
+        <button id="saveBtn" class="saveBtn" type="button">SAVE</button>
     </div>
 </div>
+<p>ver 1.1</p>
 <script src="popup.js"></script>
 </body>
 </html>
