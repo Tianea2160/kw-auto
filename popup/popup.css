@@ -19,14 +19,36 @@ body{
     margin-left: 10px;
 }
 
-.inputWrapper input{
-    padding-left: 5px;
-    height: 20px;
-    border: 1px solid gray;
-    border-radius: 7px;
+.inputWrapper label{
+    height: 30px;
+    border : 2px solid gray;
+    padding: 2px;
 
+    display: flex;
+    align-content: center;
+    flex-grow: 1;
+
+    border-radius: 7px;
     font-family: 'Lato', sans-serif;
+
+    font-size: 25px;
 }
+.inputWrapper label button {
+    color: gray;
+    background-color: white;
+
+    margin-right: 4px;
+    box-shadow: none;
+}
+
+.inputWrapper input{
+    border: none;
+    font-size: 17px;
+
+    height: 100%;
+    flex-grow: 1;
+}
+.inputWrapper input:focus { outline: none; }
 
 
 button{
@@ -34,9 +56,10 @@ button{
     width: 50px;
 
     font-size: 15px;
+    font-family: 'Lato', sans-serif;
+
     text-align: center;
     justify-content: center;
-    font-family: 'Lato', sans-serif;
 
     border : none;
     border-radius: 7px;
@@ -44,6 +67,16 @@ button{
 
     background-color: #f03d3d;
     color: #fff;
+
+    cursor: pointer;
+}
+
+
+.footer button:hover{
+    border: 2px solid #f03d3d;
+    border-radius: 7px;
+    background-color: white;
+    color: #f03d3d;
 }
 
 .icon{
@@ -93,3 +126,7 @@ button{
     transition: all 0.2s ease-in;
 }
 
+.pw label{
+    display: flex;
+    font-family: "Lato", serif;
+}
