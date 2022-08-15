@@ -41,6 +41,18 @@
       "js": [
         "login.js"
       ]
+    },
+    {
+      "matches": [
+        "https://klas.kw.ac.kr/std/cmn/frame/Frame.do*"
+      ],
+      "css" : [
+        "homework.css"
+      ],
+      "js": [
+        "homework.js"
+      ],
+      "run_at" : "document_end"
     }
   ]
 }
