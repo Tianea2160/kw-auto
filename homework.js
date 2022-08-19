@@ -44,7 +44,6 @@ const process = () => {
             return res;
         }).then(res => {
         const yearhakgi = JSON.parse(res);
-        console.log(yearhakgi);
         for (let i = 0; i < yearhakgi[select.selectedIndex]?.subjList.length; i++) {
             getTaskStdList({
                 selectChangeYn: "Y",
