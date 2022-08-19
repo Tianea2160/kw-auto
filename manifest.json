@@ -11,7 +11,7 @@
   "action": {
     "default_popup": "./popup/popup.html",
     "default_icon": {
-      "8" : "/asset/icon/KWAuto.png",
+      "8": "/asset/icon/KWAuto.png",
       "16": "/asset/icon/icon_default_1.png",
       "32": "/asset/icon/icon_default_2.png",
       "48": "/asset/icon/icon_default_3.png",
@@ -19,7 +19,7 @@
     }
   },
   "icons": {
-    "8" : "/asset/icon/KWAuto.png",
+    "8": "/asset/icon/KWAuto.png",
     "16": "/asset/icon/icon_default_1.png",
     "32": "/asset/icon/icon_default_2.png",
     "48": "/asset/icon/icon_default_3.png",
@@ -41,6 +41,20 @@
       "js": [
         "login.js"
       ]
+    },
+    {
+      "matches": [
+        "https://klas.kw.ac.kr/std/cmn/frame/Frame.do*"
+      ],
+      "css": [
+        "homework.css",
+        "folding.css"
+      ],
+      "js": [
+        "homework.js",
+        "folding.js"
+      ],
+      "run_at": "document_end"
     }
   ]
 }
