@@ -32,7 +32,7 @@ const getTaskStdList = (body) => {
     })
 }
 
-const process = ()=>{
+const process = () => {
     getYearhakgiAtnlcSbjectList()
         .then(res => {
             // 기존에 있던 과제 관련 노드를 전부 삭제한다.
