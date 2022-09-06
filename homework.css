@@ -1,0 +1,49 @@
+@media screen and (max-width: 770px) {
+    .scheduletb tbody tr {
+        height: 88px;
+    }
+
+    .scheduletb tbody tr td div {
+        margin: -43px 0 0 -2px !important;
+        padding: 2px 2px 2px 3px !important;
+    }
+
+    .scheduletb tbody tr td div.lessontime3 {
+        height: calc(88px * 3) !important;
+    }
+
+    .scheduletb tbody tr td div.lessontime2 {
+        height: calc(88px * 2) !important;
+    }
+
+    .scheduletb tbody tr td div.lessontime1 {
+        height: calc(88px * 1) !important;
+    }
+}
+
+
+@media screen and (min-width: 770px) {
+    .scheduletb tbody tr {
+        height: 68px;
+    }
+
+    .scheduletb tbody tr td div {
+        margin: -35px 0 0 -2px !important;
+        padding: 2px 2px 2px 3px !important;
+    }
+
+    .scheduletb tbody tr td div.lessontime3 {
+        height: calc(68px * 3) !important;
+    }
+
+    .scheduletb tbody tr td div.lessontime2 {
+        height: calc(68px * 2) !important;
+    }
+
+    .scheduletb tbody tr td div.lessontime1 {
+        height: calc(68px * 1) !important;
+    }
+}
+
+
+
