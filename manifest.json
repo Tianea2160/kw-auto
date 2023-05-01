@@ -39,7 +39,7 @@
         "https://klas.kw.ac.kr/usr/cmn/login/LoginForm.do*"
       ],
       "js": [
-        "login.js"
+        "login/login.js"
       ]
     },
     {
@@ -47,12 +47,12 @@
         "https://klas.kw.ac.kr/std/cmn/frame/Frame.do*"
       ],
       "css": [
-        "homework.css",
-        "folding.css"
+        "homework/homework.css",
+        "folding/folding.css"
       ],
       "js": [
-        "homework.js",
-        "folding.js"
+        "homework/homework.js",
+        "folding/folding.js"
       ],
       "run_at": "document_end"
     }
