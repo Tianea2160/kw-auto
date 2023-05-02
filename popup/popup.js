@@ -18,20 +18,20 @@ chrome.storage.sync.get("OnOffState")
     .then(res => {
         if (res.OnOffState === "ON") {
             toggle.checked = true;
-            icon.src = "../asset/icon/KWAuto.png"
+            icon.src = "../asset/icon/kw_auto_on.png"
         } else if (res.OnOffState === "OFF") {
             toggle.checked = false;
-            icon.src = "../asset/icon/KWAuto-off.png"
+            icon.src = "../asset/icon/kw_auto_off.png"
         }
     })
 
 toggle.addEventListener("change", () => {
     if (toggle.checked) {
         chrome.storage.sync.set({OnOffState: "ON"})
-        icon.src = "../asset/icon/KWAuto.png"
+        icon.src = "../asset/icon/kw_auto_on.png"
     } else {
         chrome.storage.sync.set({OnOffState: "OFF"})
-        icon.src = "../asset/icon/KWAuto-off.png"
+        icon.src = "../asset/icon/kw_auto_off.png"
     }
 })
 
