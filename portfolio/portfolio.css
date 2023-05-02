@@ -1,0 +1,12 @@
+#search-container {
+    flex-grow: 1;
+    display: flex;
+}
+
+#search-input{
+    width: calc(100% - 70px);
+}
+
+#search-button{
+    width: 70px;
+}

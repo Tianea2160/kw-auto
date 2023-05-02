@@ -55,6 +55,18 @@
         "folding/folding.js"
       ],
       "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "https://klas.kw.ac.kr/std/cps/inqire/IndividualPortfolio.do"
+      ],
+      "js" : [
+        "portfolio/portfolio.js"
+      ],
+      "css" : [
+        "portfolio/portfolio.css"
+      ],
+      "run_at": "document_end"
     }
   ]
 }
