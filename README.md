@@ -1,38 +1,34 @@
-# KW Auto
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73744183/235834021-deed9f17-4e37-4f47-baad-1ee8b7738264.png"/>
+</p>
 
-## 간단 설명
+<h1 align="center">KW Auto</h1>
 
-학교 홈페이지 이용을 편리하게 하기 위한 편의성 Chrome 확장 프로그램
+<p align="center">
+<img src="https://img.shields.io/badge/javascript-ES6-FFFF00.svg"/>
+<img src="https://img.shields.io/badge/chrome extension-v3-5675DF.svg"/>
+<img src="https://img.shields.io/badge/license-Apache2.0-brightgreen.svg"/>
+</p>
 
-현재 크롬 Web store에서 다운로드 가능
+<p align="center">
+광운대 홈페이지를 사용하면서 겪은 불편한 점을 해결하기 위해서 제작한 chrome extension application 입니다.
+</p>
 
-- link : [KW Auto](https://chrome.google.com/webstore/detail/kw-auto/lbnhabebmehjhmandmeaijackijmmlkl?hl=ko)
+## Functions
 
-## 사용법
+- 자동 로그인
+- 개인 포트폴리오 페이지 검색 기능
+- 수업 시간표 folding 기능
+- 수업 시간표에 과제 현황 표시
 
-### 1. Chrome에서 설치
-> 1) [KW Auto](https://www.notion.so/73c8aec4dc2648b78aa0b7953fcf0bce) 해당 링크를 타고 KW Auto를 설치한다.
-> 2) 크롬의 우측 상단에 퍼즐 모양을 클릭하고 KW Auto 고정 핀을 활성화 한다.
-> 3) 학번과 비밀 번호를 입력하고 저장한다.
-> 4) 학교 홈페이지를 이용한다.
+## How To Use
 
+1. 확장 프로그램을 설치합니다..
+    1. chrome web store에서 확장 프로그램을 설치합니다.
+    2. 프로젝트 파일을 다운로드해서 확장 프로그램을 설치합니다.
+2. 설치한 확장 프로그램의 popup에 학번과 비밀번호를 입력합니다.
+3. 편하게 홈페이지를 사용하시면 됩니다.
 
+## How To Contribute
 
-<img src="KW%20Auto%208100f68169854b6981022fc0c704531f/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-08-15_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_12.04.17.png" width="30%" height="20%"/><img src="KW%20Auto%208100f68169854b6981022fc0c704531f/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-08-15_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_12.06.19.png"
-width="30%" height="20%"/>
-
-### 2. 압축파일을 이용해서 직접 설치
-> 1) release된 최신 압축 파일을 다운 받는다.
-> 2) chrome://extensions 에 접속해서 개발자 모드를 킨다.
-> 3) a에서 다운 받은 압축 파일을 풀고 “압축 해제된 프로그램을 로드합니다.”를 클릭하면 확장 프로그램이 설치된다.
-> 4) 나머지는 [1. b~c단계](https://www.notion.so/KW-Auto-4bd88cb78424477e8d039f39dc4578ef)를 진행하면 됩니다.
-
-<img src="KW%20Auto%208100f68169854b6981022fc0c704531f/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-08-15_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_12.08.05.png" width="50%"/><img src="KW%20Auto%208100f68169854b6981022fc0c704531f/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-08-15_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_12.09.45.png"
-width="50%"/>
-
-
-## Contribution
-다음과 같은 컨벤션만 지켜주신다면 어떠한 기여도 환영합니다.
-1. git convention : https://doublesprogramming.tistory.com/256
-2. git flow 형식으로 진행, master 브랜치에 pr하기 보다는 develop branch에 pr하기
-3. 오타, 코드 리팩토링, 기능구현 등 모든 기여 환영
+issue 페이지에 의견을 남겨주시면 검토 후 조치를 취하도록 하겠습니다.
